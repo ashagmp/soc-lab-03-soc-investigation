@@ -34,7 +34,7 @@ Domain: `ashag.local` (NetBIOS: `ASHAG`) — internal network `192.168.10.0/24` 
 | FIN-PC01 | DHCP (.100-.200) | Windows 11, domain-joined, user `finuser`, Sysmon + UF | ✅ |
 | web01 | 192.168.10.20 | Ubuntu Server, Splunk UF | ✅ |
 | splunk01 | 192.168.10.40 | Splunk Enterprise (indexer / search head) | ✅ |
-| attack01 | 192.168.10.70 | Kali Linux — controlled attack simulation | ⬜ Planned |
+| attack01 | 192.168.10.70 | Kali Linux — controlled attack simulation | ✅ |
 
 Indexes: `windows` (Security + Sysmon, split by sourcetype), `linux`
 
@@ -51,7 +51,7 @@ soc-lab-03-soc-investigation/
 │   └── <detection-name>.spl
 ├── dashboards/                # Exported dashboard XML/screenshots
 │   └── soc-overview.md
-├── screenshots/               # Supporting evidence per investigation
+├── evidence/                   # Supporting evidence per investigation (any file type)
 │   └── 01-<technique-name>/
 └── diagrams/                  # Attack flow / network diagrams
 ```
@@ -82,11 +82,11 @@ Core SOC Overview dashboard, built on the `windows`/`linux` indexes:
 
 | # | Scenario | Target Host | MITRE ATT&CK | Status |
 |---|---|---|---|---|
-| 01 | | | | Planned |
+| 01 | [Nmap Recon Scan](investigations/01-nmap-recon-dc01.md) | DC01 | T1046 | ✅ Complete |
 | 02 | | | | Planned |
 | 03 | | | | Planned |
 
-
+*(Update this table as each investigation is added — link the scenario name to its file in `investigations/`.)*
 
 ## Tools Used
 
