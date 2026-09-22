@@ -71,7 +71,7 @@ DC01 runs the **SwiftOnSecurity** Sysmon configuration. Its `NetworkConnect` rul
 1. The initiating process image is on a curated list of suspicious binaries (`nmap.exe`, `nc.exe`, `psexec.exe`, `powershell.exe`, `mshta.exe`, etc.), **or**
 2. The destination port is on a fixed watchlist: `22, 23, 25, 143, 3389, 5800, 5900, 4444, 1080, 3128, 8080, 1723, 9001, 9030`
 
-Neither condition applied. The scanned ports — **53, 88, 135, 139, 389, 445, 464, 593, 636, 3268, 3269, 5985** — are standard AD service ports (DNS, Kerberos, LDAP, SMB, WinRM), none of which are on the include list. The watchlist is built around lateral-movement/C2/remote-access indicators (RDP, VNC, Tor, common backdoor ports), not general domain service traffic. Because the connections landed on `lsass.exe`/`svchost.exe` handling DNS/LDAP/SMB — not a listed suspicious binary — the process-image condition didn't fire either.
+Neither condition applied. The scanned ports — **53, 88, 135, 139, 389, 445, 464, 593, 636, 3268, 3269, 5985** — are standard AD service ports (DNS, Kerberos, LDAP, SMB, WinRM), none of which are on the include list. The watchlist is built around lateral-movement/C2/remote-access indicators (RDP, VNC, Tor, common backdoor ports), not general domain service traffic. The nmap.exe process-image condition did not match because Nmap was executed on attack01 (Kali), not on DC01.
 
 Relevant config excerpt (`sysmon64 -c` output):
 ```
