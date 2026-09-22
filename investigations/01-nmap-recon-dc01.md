@@ -120,6 +120,6 @@ In a real environment, this scan would warrant:
 
 ## Evidence
 
-- `evidence/01-nmap-recon-dc01/nmap-scan-dc01.txt` — full Nmap output
-- `evidence/01-nmap-recon-dc01/sysmon-networkconnect-config.txt` — NetworkConnect include/exclude rule blocks
-- `evidence/01-nmap-recon-dc01/splunk-empty-result.png` — Splunk search showing 0 events for EventCode=3
+- [nmap-scan-dc01.txt](../evidence/01-nmap-recon-dc01/nmap-scan-dc01.txt) — full Nmap output
+- [sysmon-networkconnect-config.txt](../evidence/01-nmap-recon-dc01/sysmon-networkconnect-config.txt) — NetworkConnect include/exclude rule blocks
+- [splunk-empty-result.png](../evidence/01-nmap-recon-dc01/splunk-empty-result.png) — Splunk search showing 0 events for EventCode=3
