@@ -83,7 +83,7 @@ Core SOC Overview dashboard, built on the `windows`/`linux` indexes:
 | # | Scenario | Target Host | MITRE ATT&CK | Status |
 |---|---|---|---|---|
 | 01 | [Nmap Recon Scan](investigations/01-nmap-recon-dc01.md) | DC01 | T1046 | ✅ Complete |
-| 02 | | | | Planned |
+| 02 | [SSH Brute Force](investigations/02-ssh-bruteforce-web01.md) | web01 | T1110.001 | ✅ Complete |
 | 03 | | | | Planned |
 
 *(Update this table as each investigation is added — link the scenario name to its file in `investigations/`.)*
