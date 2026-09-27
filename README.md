@@ -47,10 +47,6 @@ soc-lab-03-soc-investigation/
 │   ├── 00-template.md
 │   ├── 01-<technique-name>.md
 │   └── ...
-├── detections/               # Saved SPL queries used across investigations
-│   └── <detection-name>.spl
-├── dashboards/                # Exported dashboard XML/screenshots
-│   └── soc-overview.md
 ├── evidence/                   # Supporting evidence per investigation (any file type)
 │   └── 01-<technique-name>/
 └── diagrams/                  # Attack flow / network diagrams
