@@ -6,7 +6,7 @@ This repo is the investigation layer of my home SOC lab. The infrastructure — 
 
 ## Objective
 
-Simulate realistic attacker behavior against a small enterprise AD environment, detect it using Splunk, and produce SOC L1-style investigation reports — the same artifact a hiring manager would expect to see from someone who's actually done the work, not just studied the theory.
+Simulate realistic attacker behavior against a small enterprise AD environment, detect it using Splunk, and Produce SOC L1-style investigation reports that document detection, investigation, MITRE ATT&CK mapping, IOCs, timelines, and response actions.
 
 ## Architecture
 
@@ -33,7 +33,7 @@ Domain: `ashag.local` (NetBIOS: `ASHAG`) — internal network `192.168.10.0/24` 
 | HR-PC01 | DHCP (.100-.200) | Windows 11, domain-joined, user `hruser`, Sysmon + UF | ✅ |
 | FIN-PC01 | DHCP (.100-.200) | Windows 11, domain-joined, user `finuser`, Sysmon + UF | ✅ |
 | web01 | 192.168.10.20 | Ubuntu Server, Splunk UF | ✅ |
-| splunk01 | 192.168.10.40 | Splunk Enterprise (indexer / search head) | ✅ |
+| splunk01 | 192.168.10.40 | Splunk Enterprise  | ✅ |
 | attack01 | 192.168.10.70 | Kali Linux — controlled attack simulation | ✅ |
 
 Indexes: `windows` (Security + Sysmon, split by sourcetype), `linux`
@@ -80,7 +80,7 @@ Core SOC Overview dashboard, built on the `windows`/`linux` indexes:
 |---|---|---|---|---|
 | 01 | [Nmap Recon Scan](investigations/01-nmap-recon-dc01.md) | DC01 | T1046 | ✅ Complete |
 | 02 | [SSH Brute Force](investigations/02-ssh-bruteforce-web01.md) | web01 | T1110.001 | ✅ Complete |
-| 03 | [RDP Brute Force + Successful Login](investigations/03-rdp-bruteforce-hr-pc01.md) | HR-PC01 | T1110 / T1021.001 | ✅ Complete |
+| 03 | [RDP Brute Force -> Successful Login](investigations/03-rdp-bruteforce-hr-pc01.md) | HR-PC01 | T1110 / T1021.001 | ✅ Complete |
 | 04 | | | | Planned |
 | 05 | | | | Planned |
 | 06 | | | | Planned |
