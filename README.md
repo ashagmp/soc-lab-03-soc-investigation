@@ -81,7 +81,7 @@ Core SOC Overview dashboard, built on the `windows`/`linux` indexes:
 | 01 | [Nmap Recon Scan](investigations/01-nmap-recon-dc01.md) | DC01 | T1046 | ✅ Complete |
 | 02 | [SSH Brute Force](investigations/02-ssh-bruteforce-web01.md) | web01 | T1110.001 | ✅ Complete |
 | 03 | [RDP Brute Force -> Successful Login](investigations/03-rdp-bruteforce-hr-pc01.md) | HR-PC01 | T1110 / T1021.001 | ✅ Complete |
-| 04 | | | | Planned |
+| 04 | [Windows → Linux Lateral Movement via SSH](investigations/04-lateral-movement-ssh.md) | web01 | T1021.004 | ✅ Complete |
 | 05 | | | | Planned |
 | 06 | | | | Planned |
 | 07 | | | | Planned |
