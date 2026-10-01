@@ -1,0 +1,31 @@
+┌──(kali㉿kali)-[~]
+└─$ nxc smb 192.168.10.10 -u hruser -p 'Password1!' -d ashag.local
+SMB         192.168.10.10   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:Password1! STATUS_LOGON_FAILURE 
+┌──(kali㉿kali)-[~]
+└─$ nxc smb 192.168.10.10 -u finuser -p 'Password1!' -d ashag.local
+SMB         192.168.10.10   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\finuser:Password1! STATUS_LOGON_FAILURE 
+┌──(kali㉿kali)-[~]
+└─$ nxc smb 192.168.10.10 -u Administrator -p 'Password1!' -d ashag.local
+SMB         192.168.10.10   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\Administrator:Password1! STATUS_LOGON_FAILURE 
+┌──(kali㉿kali)-[~]
+└─$ nxc smb 192.168.10.10 -u hruser -p 'WrongPass1!' -d ashag.local
+nxc smb 192.168.10.10 -u hruser -p 'WrongPass2!' -d ashag.local
+nxc smb 192.168.10.10 -u hruser -p 'WrongPass3!' -d ashag.local
+nxc smb 192.168.10.10 -u hruser -p 'WrongPass4!' -d ashag.local
+nxc smb 192.168.10.10 -u hruser -p 'WrongPass5!' -d ashag.local
+nxc smb 192.168.10.10 -u hruser -p 'WrongPass6!' -d ashag.local
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass1! STATUS_LOGON_FAILURE 
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass2! STATUS_LOGON_FAILURE 
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass3! STATUS_LOGON_FAILURE 
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass4! STATUS_LOGON_FAILURE 
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass5! STATUS_LOGON_FAILURE 
+SMB         192.168.10.10   445    DC01             [] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ashag.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         192.168.10.10   445    DC01             [-] ashag.local\hruser:WrongPass6! STATUS_ACCOUNT_LOCKED_OUT
